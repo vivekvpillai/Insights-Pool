@@ -1,4 +1,4 @@
-Final-Project-GA: Usage Insights
+#Final-Project-GA: Usage Insights
 
 This was my first attempt at using Java Spring Boot. I connected the Java Spring Boot backend to the React frontend.
 
