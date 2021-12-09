@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+margin: 0px;
+padding:0px;
+font-family: 'Montserrat', sans-serif;
+}
+
 body{
   color: white;
   background-color: #71797E;
@@ -6,4 +14,73 @@ body{
 .title{
   background-color: #54595C;
   box-sizing: border-box;
+  text-align: center;
+}
+
+#titlemain{
+  font-weight: bold;
+}
+
+.listmap{
+  display: flex;
+  gap: 1vw;
+  list-style-type: none;
+  border: 8px solid green;
+  margin-bottom: 1vh;
+  background-color: #54595C;
+}
+
+.createDiv{
+  display: flex;
+  flex-direction: column;
+  margin-left: 45%;
+  margin-top: 1vh
+}
+
+.objectsDiv{
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vh;
+  gap: 2vh;
+}
+
+input{
+  background-color: #37393A;
+  color: white;
+}
+
+.deletebutton{
+  background-color: #900C3F;
+  color: white;
+}
+
+.description{
+ font-size: 10px;
+ margin-top: 4px;
+ margin-bottom: 8px;
+}
+
+.footer{
+  display: flex;
+  position: fixed;
+  gap: 3px;
+  left: 3;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer a{
+  padding: 15px;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-size: 60%;
+}
+
+.githubrepo img{
+  width: 28px;
+  height: 28px;
+}
+
+.linkedin img{
+  width: 28px;
+  height: 28px;
 }
