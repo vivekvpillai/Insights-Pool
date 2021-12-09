@@ -111,7 +111,7 @@ class App extends React.Component {
     render = () => {
         return <div>
           <div className="createDiv">
-            <h2>Create object</h2>
+            <h2>List Data</h2>
             <form onSubmit={this.createobject}>
                 <input onKeyUp={this.changeNewobjectsampleName} type="text" placeholder="sampleName" /><br/>
                 <input onKeyUp={this.changeNewobjectcategory} type="text" placeholder="category" /><br/>
