@@ -1,15 +1,17 @@
 package com.Vivek.Insights;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+
 
 @Entity
+@Table(name= "Object")
 public class Object {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
   private Integer id;
+  @ManyToOne
+  @JoinColumn(name = "user_id")
+  private User user;
 
   private String sampleName;
 
@@ -46,6 +48,12 @@ public class Object {
   }
 
   public void setVisits(Integer visits){
+    this.visits = visits;
+  }
+
+  public Object(String sampleName, String category, Integer visits, User user){
+    this.sampleName = sampleName;
+    this.category = category;
     this.visits = visits;
   }
 }
