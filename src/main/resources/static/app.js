@@ -1,3 +1,4 @@
+
 class App extends React.Component {
     state = {
         objects:[]
@@ -109,6 +110,7 @@ class App extends React.Component {
 
     render = () => {
         return <div>
+          <div className="createDiv">
             <h2>Create object</h2>
             <form onSubmit={this.createobject}>
                 <input onKeyUp={this.changeNewobjectsampleName} type="text" placeholder="sampleName" /><br/>
@@ -116,7 +118,9 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewobjectvisits} type="number" placeholder="visits" /><br/>
                 <input type="submit" value="Create object" />
             </form>
-            <h2>List of objects</h2>
+          </div>
+          <div className="objectsDiv">
+            <h2>Data Listing</h2>
             <ul>
                 {
                     this.state.objects
@@ -125,11 +129,11 @@ class App extends React.Component {
                         (object, index) => {
                           console.log(object);
                           console.log(index)
-                            return <li key={index}>
+                            return <li className="listmap" key={index}>
 
-                                {object.sampleName}: {object.category} : {object.visits}
+                                Sample Name: {object.sampleName} | Category: {object.category} | Visits: {object.visits}
 
-                                <button value={object.id} onClick={this.deleteObject}>DELETE</button>
+                                <button className="deletebutton" value={object.id} onClick={this.deleteObject}>DELETE</button>
 
                                 <form id={object.id} onSubmit={this.updateObject}>
                                     <input onKeyUp={this.changeupdateObjectsampleName} type="text" placeholder="sampleName"/><br/>
@@ -143,6 +147,7 @@ class App extends React.Component {
                 }
             </ul>
         </div>
+      </div>
     }
 }
 
