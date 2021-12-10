@@ -11,11 +11,11 @@ public class Object {
   @GeneratedValue(strategy=GenerationType.AUTO)
   private Integer id;
 
-  private String sampleName;
+  private String itemName;
 
-  private String category;
+  private String department;
 
-  private Integer visits;
+  private Integer quantity;
 
   public Integer getId() {
     return id;
@@ -25,27 +25,27 @@ public class Object {
     this.id = id;
   }
 
-  public String getsampleName() {
-    return sampleName;
+  public String getitemName() {
+    return itemName;
   }
 
-  public void setsampleName(String sampleName) {
-    this.sampleName = sampleName;
+  public void setitemName(String itemName) {
+    this.itemName = itemName;
   }
 
-  public String getCategory() {
-    return category;
+  public String getdepartment() {
+    return department;
   }
 
-  public void setCategory(String category) {
-    this.category = category;
+  public void setdepartment(String department) {
+    this.department = department;
   }
 
-  public Integer getVisits() {
-    return visits;
+  public Integer getquantity() {
+    return quantity;
   }
 
-  public void setVisits(Integer visits){
-    this.visits = visits;
+  public void setquantity(Integer quantity){
+    this.quantity = quantity;
   }
 }
