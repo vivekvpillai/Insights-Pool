@@ -1,6 +1,4 @@
-#Final-Project-GA: Usage Insights
-
-This was my first attempt at using Java Spring Boot. I connected the Java Spring Boot backend to the React frontend.
+This project uses Java Spring Boot backend with a ReactJS frontend.
 
 ##User Stories
 
